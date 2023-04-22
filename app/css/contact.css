@@ -1,4 +1,19 @@
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
   input[type="text"],
   input[type="email"],
   textarea {
@@ -45,4 +60,5 @@
   .social-icons i:hover {
     color: #000;
   }
+  
   
