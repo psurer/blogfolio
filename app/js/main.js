@@ -26,10 +26,17 @@ for (const link of links) {
 }
 
 // This function will allow the user to smoothly scroll to a section on link click
-function smoothScroll(clickEvent) {
-  // Prevents the default behavior of the link click
-  clickEvent.preventDefault();
-
+function smoothScroll(event) {
+    // Prevents the default behavior of the link click
+  event.preventDefault();
+  const target = this.getAttribute('href');
+  const section = document.querySelector(target);
+  const sectionPosition = section.offsetTop;
+  window.scrollTo({
+    top: sectionPosition,
+    behavior: 'smooth'
+  });
+}
   // Gets the section ID from the href attribute of the clicked link
   const target = this.getAttribute('href');
 
@@ -55,10 +62,10 @@ for (const link of links) {
 // Adding event listeners to each blog post 
 // we set up the functionality to expand and collapse the details of each blog post when the user clicks on its title.
 const posts = document.querySelectorAll('.post');
-posts.forEach((post) => {
+for (const post of posts) {
   const title = post.querySelector('.title');
   title.addEventListener('click', toggleDetails);
-});
+}
 
 // This function will show/hide blog post details
 function toggleDetails(event) {
