@@ -8,6 +8,7 @@
   
   nav ul {
     display: flex;
+    text-decoration: none;
   }
   
   nav li {
@@ -16,8 +17,16 @@
   
   nav a {
     color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
   }
-  
+
+  header nav a.active {
+    border-bottom-color: #fff;
+    padding-bottom: 3px;
+  }
   /* main styles */
   main {
     display: flex;
