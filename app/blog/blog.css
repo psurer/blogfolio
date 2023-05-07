@@ -18,17 +18,19 @@
     margin-bottom: 20px;
   }
   
-  .read-more {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .read-more:hover {
-    background-color: #0062cc;
-  }
-  
+ /* Add hover effect and transition to read-more links */
+.read-more {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0062cc;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
