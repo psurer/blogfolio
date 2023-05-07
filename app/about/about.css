@@ -1,15 +1,6 @@
 /* about.css */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
   .card {
     width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +27,6 @@ body {
   .card ul {
     display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
   }
   
