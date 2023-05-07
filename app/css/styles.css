@@ -51,6 +51,7 @@ header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 header nav li {
@@ -67,6 +68,7 @@ header nav a {
 nav a.active {
   border-bottom: 2px solid var(--secondary-color);
   padding-bottom: 3px;
+  border-bottom-color: #fff;
 }
 
 /* Styles for the main content */
