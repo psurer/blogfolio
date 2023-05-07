@@ -1,274 +1,109 @@
+/* Defining color palette */
+:root {
+  --primary-color: #007aff; /* Apple blue */
+  --secondary-color: #fff; /* White */
+  --text-color: #333; /* Dark gray */
+  --bg-color: #f5f5f5; /* Light gray */
+}
+
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  Global styles for links and lists */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Font styles */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  /* navBar / header styles */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 0 20px;
-    height: 60px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
- header nav li {
-    margin: 0 10px;
-  }
-  
-  header nav a {
-    color: #cf41d9;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  nav a.active {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 3px;
-  }
-  
-  /* main styles */
-  main {
-    max-width: 900px; /* Sets the maximum width to 960 pixels */
-    margin: 20px auto; 
-    padding: 0 20px; /* Sets padding to 0 pixels on the top and bottom, and 20 pixels on the left and right */
-  }
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
 
-  /* about me page section styles */
-  #about {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
-  .card-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .card-content {
-    text-align: center;
-  }
-  
-  .about-links {
-    margin-top: 20px;
-  }
-  
-  .about-links a {
-    display: inline-block;
-    margin-right: 20px;
-    color: #000;
-    text-decoration: none;
-    transition: color 0.2s ease-in-out;
-  }
-  
-  .about-links a:hover {
-    color: #007bff;
-  }
-  
-  .about-links i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-  }
-  
-  /* contact styles  */
+/* Styles for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4c4faf;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #4c4faf;
-  }
-  
-  .social-icons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .social-icons a:last-of-type {
-    margin-right: 0;
-  }
-  
-  .social-icons i {
-    font-size: 24px;
-    color: #555;
-    line-height: 1;
-  }
-  
-  .social-icons i:hover {
-    color: #000;
-  }
-  
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
+header nav li {
+  margin: 0 10px;
+}
 
-  /* portfolio/projects styles */
-  .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .project {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    width: 300px;
-  }
-  
-  .project img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .project h3 {
-    margin-top: 10px;
-    font-size: 24px;
-  }
+header nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
 
-  .project p {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  
-  .project a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .project a:hover {
-    background-color: #0062cc;
-  }
-  
-  
-  /* support styles */
+nav a.active {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 3px;
+}
 
-  .support h1 {
-    margin-top: 0;
-  }
-  
-  .support p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .support ul {
-    list-style: none;
-    margin: 20px 0;
-    padding: 0;
-  }
-  
-  .support ul li {
-    margin: 10px 0;
-  }
-  
-  .support ul li a {
-    display: block;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  
-  .support ul li a:hover {
-    background-color: #555;
-  }
-  
-  /* Footer Styles */
+/* Styles for the main content */
+main {
+  max-width: 900px;
+  margin: 20px auto; 
+  padding: 0 20px;
+}
+
+/* Styles for links on hover */
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Styles for buttons */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Styles for the footer */
 footer {
-    display: flex;
-    align-items: center; /* centers the child elements vertically. */
-    justify-content: center;
-    height: 60px;   /* Footer height is 60 px , try larger perhaps? */
-    background-color: #f5f5f5;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 14px;
+}
