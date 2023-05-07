@@ -51,7 +51,6 @@ function smoothScroll(event) {
     top: sectionPosition,
     behavior: 'smooth'
   });
-}
 
 // Looping through all the links and adding an event listener for when it is clicked
 for (const link of links) {
