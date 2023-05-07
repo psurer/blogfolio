@@ -1,0 +1,60 @@
+.support {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .support h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .support p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .support ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .support li {
+    margin-bottom: 10px;
+  }
+  
+  .support a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .support a:hover {
+    background-color: #0056b3;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .support {
+      width: 90%;
+    }
+    
+    .support h1 {
+      font-size: 24px;
+    }
+    
+    .support p {
+      font-size: 16px;
+    }
+    
+    .support a {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
