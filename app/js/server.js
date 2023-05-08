@@ -1,4 +1,5 @@
 const express = require('express'); // Imports the Express.js module
+const axios = require('axios'); // Imports the Axios library so we can make HTTP requests from a browser or node.js application
 const app = express(); // We create an instance of the Express.js application
 const bodyParser = require('body-parser'); // Imports the body-parser middleware, which is used to parse the request body
 const nodemailer = require('nodemailer'); // Imports the nodemailer library, which is used to send email messages
@@ -6,16 +7,15 @@ const nodemailer = require('nodemailer'); // Imports the nodemailer library, whi
 // Sets up body parser middleware
 app.use(bodyParser.urlencoded({ extended: false })); // Sets up the body-parser middleware to parse URL-encoded data with the extended option set to false.
 
-
 app.use(bodyParser.json()); // Sets up the body-parser middleware to parse JSON data
 
 // Serves static files from the "public" directory
 app.use(express.static('public')); // Sets up a middleware to serve static files from the public directory.
 
 // Handles POST requests to the contact form
-/* !!!! 
-        *** CHECK THAT the Request.THIS works *** 
-!!! */
+                                                   /* !!!! 
+*** CHECK THAT the Request.THIS works *** 
+                                                   !!! */
 app.post('/contact', (req, res) => { // This sets up a route for handling HTTP POST requests to the /contact URL
   const name = req.this.body.name; // Here we extract the name field from the HTTP request body
   const email = req.this.body.email; // Extracts the email field from the HTTP request body
@@ -52,6 +52,18 @@ app.post('/contact', (req, res) => { // This sets up a route for handling HTTP P
     }
   });
 }); // line closes our callback function
+
+app.get('/blogs', (req, res) => {
+    axios.get('http://localhost:5000/api/blogs') // send GET request to the backend
+      .then((response) => {
+        console.log(response.data); // Logs the blog data to the console
+        res.send(response.data); // Sends the blog data back to the client
+      })
+      .catch((error) => {
+        console.error('Error retrieving blogs: ', error);
+        res.status(500).send('Error retrieving blogs');
+      });
+  });
 
 // Starts the server
 const PORT = process.env.PORT || 3000;
