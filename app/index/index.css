@@ -95,6 +95,7 @@ body {
   
   main #about-links ul {
     margin-right: 40px;
+    list-style: none;
   }
   
   main #about-links li {
