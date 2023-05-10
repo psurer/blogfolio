@@ -1,14 +1,18 @@
   
   /* header styles */
-  header {
-    background-color: #333;
-    color: #fff;
+  header { 
+    background-color: #4837bab1;
+    color: #3e4144;
     padding: 10px;
+    text-decoration: none;
   }
   
   nav ul {
+    list-style: none;
     display: flex;
     text-decoration: none;
+    justify-content: space-around;
+    margin-left: 20px;
   }
   
   nav li {
@@ -16,9 +20,9 @@
   }
   
   nav a {
-    color: #fff;
+    color: #272828;
     text-decoration: none;
-    font-weight: bold;
+    font-weight:lighter;
     font-size: 18px;
     border-bottom: 2px solid transparent;
   }
@@ -82,7 +86,7 @@
   
   /* footer styles */
   footer {
-    background-color: #333;
+    background-color: #4837bab1;
     color: #fff;
     text-align: center;
     padding: 10px;
