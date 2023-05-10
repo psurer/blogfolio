@@ -1,4 +1,29 @@
-  
+/* Resets default styles */
+html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, label, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Applying box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Sets default font family, size, and color */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Applying a maximum width to the page content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
   /* header styles */
   header { 
     background-color: #4837bab1;
@@ -83,11 +108,33 @@
   main #support ul {
     margin-left: 20px;
   }
-  
+
+.my-avatar {
+  display:flex;
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+.left-container {
+  display: felx;
+  flex: 1 0 auto;
+  display: block;
+  float: left;
+  width: 60%;
+}
+
+.right-container {
+    float: right;
+    overflow-x: hidden;
+    width: 35%;
+}
   /* footer styles */
   footer {
-    background-color: #4837bab1;
-    color: #fff;
+    background-color: #ffffffb1;
+    color: #323232;
     text-align: center;
     padding: 10px;
   }
