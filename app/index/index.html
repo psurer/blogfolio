@@ -1,45 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Priscilla | Portfolio &amp; Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <!-- now the good stuff -->
-  <body>
-    <!-- nav bar  -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="../about/about.html">About</a></li>
-          <li><a href="../portfolio/portfolio.html">Projects</a></li>
-          <li><a href="../blog/blog.html">Blog</a></li>
-          <li><a href="../contact/contact.html">Contact</a></li>
-          <li><a href="../support/support.html">Support</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- main content -->
-    <main>
-      <!-- Splitting page in two : Left Side-->
+<head>
+	<meta charset="UTF-8" />
+	<title>Priscilla | Portfolio &amp; Blog</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="index.css" />
+</head>
+<body class="home">
+		<!-- header  -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="../about/about.html">About</a></li>
+				<li><a href="../portfolio/portfolio.html">Projects</a></li>
+				<li><a href="../blog/blog.html">Blog</a></li>
+				<li><a href="../support/support.html">Support</a></li>
+				<li><a href="../contact/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- <div class="main-container"> -->
+	<!-- main content -->
+	<main>
+		<div class="main-container clearfix">
+								<!-- Splitting page in two : Left Side-->
+							<!-- My Tech Tidbits and Travel Blog Entries -->
+		<div class="left-container">
+			<h3>Tech Tidbits and Travel</h3>
+			<!-- <a href="../blog/blog.html">View All Posts</a> -->
+				<ul class="listing">
+				<!-- Blog Entry 1 -->
+					<li>
+						<article>
+							<h4 class="blog-title">Learning AI Promts</h4>
+							<p class="post-meta">Tech Tidbits</p>
+							<img src="blog-post-image.jpg" alt="Blog Post Image">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla lectus in ante
+							tempor eleifend. Praesent ut hendrerit nunc. Suspendisse euismod libero quam, ut venenatis
+							nisi lobortis nec. Integer eget risus congue, luctus elit a, vestibulum elit. Nam
+							sollicitudin, nisl ac iaculis vestibulum, nisl sapien consequat odio, vel finibus ipsum odio
+							sit amet justo.</p>
+							<div><a href="../blog/blog-article.html" class="read-more">Read More</a></div>
+						</article>
+					</li>
+				<!-- Blog Entry 2 -->
+					<li>
+						<article>
+							<h4 class="blog-title">Fav Cafes in Tokyo</h4>
+							<p class="blog-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.</p>
+							<a href="../blog/post.html" class="read-more">Read More</a>
+						</article>
+					</li>
+				<!-- Blog Entry 3 -->
+					<li>
+						<article>
+							<h4 class="blog-title">Prepping for Dev Interviews</h4>
+							<p class="blog-description">Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur.</p>
+							<a href="../blog/post.html" class="read-more">Read More</a>
+						</article>
+					</li>
+				</ul>
+				<a href="../blog/blog.html" class="view-all">View All Articles</a>
+			</div>
+		<!-- </ul> -->
+		<!-- </div> -->
+	<!-- Right Side - About Me and Links -->
+	<section class="right-container">
+			<h2>About me | Projects + Support </h2>
+				<div class="bio">
+			 	 <p> Read my <a href="/about/" class="strong">bio</a> and <a href="/resume/" class="strong">résumé</a>.
+					<br>Become an <a href="/thanks/">open source supporter</a>.
+					<br>Get a <a href="/support/">support contract</a> for your company/team.
+					<br>Follow me on <a href="https://twitter.com/feross">Twitter</a> and <a href="https://github.com/feross">GitHub</a>.
+			  	</p>
+						<!-- <div class="outer-avatar-container"> -->
+							<a class="my-avatar" rel="" href="" title="Priscilla Sürereker">
+									<img alt="This is Me " class="my-avatar" src="../images/avatar.jpeg" alt="priscilla profile/avatar" />
+							</a>
+									<!-- profile pic and name  -->
+							<div class="profile-name-div">
+								<h2 class="name-styles">
+									<span class="break-word-styles">Priscilla Sürereker </span>
+								</h2>
+							</div>
 
-      <!-- My Tech Tidbits and Travel Blog Entries -->
-      <div class="left-container">
-        <h3>Tech Tidbits and Travel</h3>
-        <a href="../blog/blog.html">View All Posts</a>
-      </div>
+							<div class="about-container">
+								<p class="about-paragraph">
+									<span class="about break-word-styles">
+										Versatile Junior Full-Stack Dev, Innovative Consultant, Blog Writer, Avid
+										Traveller,
+										Proud creator of responsive and visually appealing web applications.
+										Builder of User-friendly Web Apps.
+										Reach out for collaborations, open to work.
+									</span>
+								</p>
+							</div>
 
-      <!-- Left Side - About Me and Links -->
-      <div class="right-container">
-        <section id="about">
-          <h1>Priscilla</h1>
+							<div class="profile-resume-link-btn">
+								<span>
+									<a href="resume" target="_blank">My Resume</a>
+								</span>
+							</div>
+							<ul>
+								<li><a href="../contact/contact.html">Contact</a></li>
+								<li><a href="../portfolio/portfolio.html">My Projects</a></li>
+								<li><a href="../support/support.html">Support Me/Donate</a></li>
+							</ul>
+							<!-- START my projects links mini info cards -->
+							<section id="projects">
+								<h2>Projects</h2>
+								<p>Check out some of my past and current projects below:</p>
+								<ul>
+									<li>
+										<h3>MyFridge</h3>
+										<p>
+											A web application that allows users to search for recipes based
+											on ingredients they have on hand, keep track of the items in
+											their fridge, avoid food waste. Stay organized, don't overbuy
+											all while helping the planet.
+										</p>
+									</li>
+									<li>
+										<h3>Multiverse</h3>
+										<p>
+											A mobile app that helps users track their daily water intake and
+											reminds them to stay hydrated.
+										</p>
+									</li>
+								</ul>
+							</section>  <!-- Fin my projects links mini info cards -->
+
+							<section id="support">  <!-- START support links mini info cards -->
+								<h2>Support</h2>
+								<p>
+									If you enjoy my work and would like to support me and my work, there
+									are a few ways to do so:
+								</p>
+								<ul>
+									<li>Make a donation via $cashApp</li>
+									<li>Become a sponsor</li>
+									<li>Spread the word on social media</li>
+								</ul>
+							</section> <!-- Fin my projects links mini info cards -->
+    <!-- </section> -->
+<!-- </div> -->
+						</div>
+</main>
+</div>
+
+
+<footer>
+	<div class="footer-container">
+		<p>&copy; 2023 Un Suisse</p>
+	</div>
+</footer>
+
+<script src="/app/js/main.js"></script>
+</body>
+</html>
+	<!-- TEST BLOG TEMPLATE  -->
+
+	<!-- <article>
+		<div class="blog-main-container">
+			<div class="blog-flex-container">
+				<div class="blog-inner-container">
+					<hr class="line-spacer" aria-hidden="true">
+					<div>
+						<span>
+							Written on: May 20, 2023
+						</span>
+					</div>
+
+					<div class="blog-margin">
+						<div class="blog-flex">
+							<div class="blog-flex-display">
+								<div class="">
+									<a class="blog-link" aria-label="Post Preview Title" rel="noopener follow" href="">
+										<h2 class="blog-h2">
+											In Research (and Beyond), Our Biggest Enemy is
+											Our Own Bias
+										</h2>
+								</div>
+								<div class="">
+									<p class="blog-p">
+										Recently I was honored to deliver the address at
+										the UC Berkeley School of Information’s Winter
+										commencement, to the graduates of the Masters in
+										Data Science program. Audio of the speech is
+										available on the iSchool’s podcast series.
+										Thanks to Dean Saxenian and to the faculty for
+										inviting me here…
+									</p>
+								</div>
+								</a>
+							</div>
+							<div class="">
+								<div class="">
+									<div class="">
+										<div class="">
+											<a class="" rel="" href="">
+												<div class="">
+													Data Science
+												</div>
+											</a>
+										</div>
+										<div class="">
+											<a class="" aria-label="Post Preview Reading Time" rel="" href="">
+												<p class="">
+													<span>
+														8 min read
+													</span>
+												</p>
+											</a>
+										</div>
+									</div>
+									<div class="">
+										<div>
+											<div class="" aria-hidden="">
+												<span>
+													<a class="" rel="" href="">
+														<svg width="25" height="25" viewBox="0 0 25 25" fill=""
+															class="">
+															<path></path>
+														</svg></a>
+												</span>
+											</div>
+										</div>
+
+										<div class="n o xb xc">
+											<div>
+												<div class="ct" aria-hidden="false" aria-describedby="173"
+													aria-labelledby="173">
+													<span>
+														<a class="" rel="" href="">
+															<svg width="25" height="25" viewBox="0 0 25 25" fill=""
+																class="">
+																<path d="" fill="">
+
+																</path>
+															</svg>
+														</a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vi vj us vk cx">
+			</div>
+		</div>t
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+	</article> -->
+
+	<!-- footer -->
+
+
+<!-- <div class="right-container">
+		<div class="side-div">
+			<div class=""> -->
+<!-- <section id="about"> -->
+<!-- <h1>Priscilla</h1>
           <img
             src="../../app/images/avatar.jpeg"
             alt="profile avatar"
             class="avatar"
-          />
-		  <h2>About Me,</h2>
+          /> -->
+<!-- <h2>About Me,</h2>
           <p>
             My name is Priscilla, I'm a junior developer with a passion for
             creating clean, user-friendly web applications. In my free time, I
@@ -49,15 +287,15 @@
           </p>
           <a href="resume" target="_blank">My Resume</a>
 
-          <section id="about-links">
-            <!-- contact form and resume and support etc  -->
-            <ul>
+          <section id="about-links"> -->
+<!-- contact form and resume and support etc  -->
+<!-- <ul>
               <li><a href="../contact/contact.html">Contact</a></li>
               <li><a href="../portfolio/portfolio.html">My Projects</a></li>
               <li><a href="../support/support.html">Support Me/Donate</a></li>
-            </ul>
-            <!-- social media and repo -->
-            <ul>
+            </ul> -->
+<!-- social media and repo -->
+<!-- <ul>
               <li><a href="https://github.com/psurer">GitHub</a></li>
               <li>
                 <a href="https://www.linkedin.com/in/psurer/">LinkedIn</a>
@@ -65,9 +303,9 @@
               <li><a href="mailto:contact@psurer.com">Email</a></li>
             </ul>
           </section>
-        </section>
-        <!-- my projects links mini info cards -->
-        <section id="projects">
+        </section> -->
+<!-- my projects links mini info cards -->
+<!-- <section id="projects">
           <h2>Projects</h2>
           <p>Check out some of my past and current projects below:</p>
           <ul>
@@ -88,10 +326,10 @@
               </p>
             </li>
           </ul>
-        </section>
+        </section> -->
 
-        <!-- support and donate to my projects -->
-        <section id="support">
+<!-- support and donate to my projects -->
+<!-- <section id="support">
           <h2>Support</h2>
           <p>
             If you enjoy my work and would like to support me and my work, there
@@ -104,13 +342,5 @@
           </ul>
         </section>
         </div>
-        <!-- footer -->
-    </main>
-	<footer>
-		<div class="footer-container">
-		  <p>&copy; 2023 Un Suisse</p>
 		</div>
-	  </footer>
-    <script src="/app/js/main.js"></script>
-  </body>
-</html>
+		</div> -->
