@@ -11,14 +11,6 @@ html {
   overflow-y: scroll
 }
 
-
-/* Resets default styles */
-/* html, body, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form, label, input, button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-} */
-
 /* Sets default font family, size, and color */
 body {
   /* display: block; */
@@ -53,7 +45,7 @@ div {
 
 /* Applying a maximum width to the page content */
 .main-container {
-  border: 1px solid rgb(234, 62, 10);
+  /* border: 1px solid rgb(234, 62, 10); */
   max-width: 1000px;
   margin: 0 auto 80px auto; 
   padding: 0 2%;
@@ -62,27 +54,17 @@ div {
 
 .left-container {
   display: block;
-  border: 1px solid rgb(137, 10, 234);
-  /* flex: 1 0 auto; */
-  /* max-width: 728px; */
-  /* min-width: 728px;  */
+  border-right: 1px solid rgba(188, 188, 188, 0.144);
   float: left;
   width: 60%;
 
 }
 
 .right-container {
-  border: 1px solid rgb(36, 234, 10);
-    border-left: 1px solid rgb(234, 10, 10);
-    /* padding-left: clamp(24px, (24px + 100vw) - 1080px, 40px); */
-    /* padding-right: 24px; */
     float: right;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     width: 35%;
-    /* min-width: 368px;
-    max-width: 368px; */
-    /* min-height: 100vh; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
  
 @media only screen and (max-width: 800px) {
@@ -94,16 +76,15 @@ div {
 
   /* header styles */
   header { 
+    /* display: flex; */
     margin-top: 0;
-    border: 1px solid rgb(36, 234, 10);
     display: block;
-    position: relative;
+    position:relative;
     background-color: #4837bab1;
     color: #3e4144;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    /* margin: 2em 0; */
   }
 
   nav ul {
@@ -137,14 +118,17 @@ div {
   }
 
 .my-avatar {
-    /* margin: 20px auto; */
+    margin: 20px auto;
     max-width: 100%;
     float: right;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+    border-radius: 50%; 
+    overflow: hidden; /* hides any overflow outside the circle */
 }
 
 .my-avatar img {
   margin: 0 0 15px 15px;
+  width: 100%; /* ensures the image takes up the entire circle*/
+  height: auto; /* maintains the aspect ratio */
 }
 
 ul.listing {
@@ -180,127 +164,6 @@ ul.listing time a:link,ul.listing time a:visited {
 
 ul.listing time a:hover,ul.listing time a:focus,ul.listing time a:active {
   color: #e22c29
-}
-
-/* .my-avatar { */
-  /* display:flex; */
-  /* display: block; */
-  /* box-sizing: border-box;
-  float: right; */
-  /* margin: 20px auto; */
-  /* width: 48;
-  height: 66; */
-  /* max-width: 100%; */
-  /* box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); */
-  /* border-radius: 50%; */
-  /* vertical-align: middle; */
-/* } */
-
-/* 
-  main #about-links ul {
-    margin-right: 40px;
-    list-style: none;
-  }
-  
-  main #about-links li {
-    margin-bottom: 10px;
-  }
-  
-  main #projects li {
-    margin-bottom: 20px;
-  }
-  
-  main #support ul {
-    margin-left: 20px;
-  } */ 
-
-
-/* .avatar-spacer-div { 
-  display:block;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
-  width: 88;
-  height: 88;
-  border: none;
-  position: absolute;
-  border-radius: 50%;
-} */
-
-/* .main-container { 
-  /* max-width: 1000px; */
-  /* margin: 0 auto 60px auto;
-  max-width: 700px;
-  padding: 0 2%;
-  width: 92%;
-} */ 
-
-
-/* .side-div { 
-  width: 100%;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-} */
-
-/* .right-side-inner-div {
-  display: block;
-  top:0px; 
-  position: relative; 
-  margin-top: 4485px;
-} */
-
-/* .right-div-flex-direction {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 47px);
-} */
-
-/* .right-div-display-block {
-  flex: 1 0 auto;
-  display: block;
-} */
-
-/* .outer-avatar-container {
-  display: block;
-  margin-top: 40px;
-padding-bottom: 0px;
-border-bottom: none;
-} */
-
-/* .avatar-link {
-  text-decoration: none;
-} */
-
-/* .inner-avatar-container {
-  display: block;
-  position: relative;
-} */
-
-/* .profile-name-div {
-  margin-top: 16px;
-  display: block;
-} */
-
-/* .blog-main-container {
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: content-box;
-  display: block;
-} */
-
-/* .blog-flex-container {
-  display: flex;
-  justify-content: center;
-}
-
-.blog-inner-container {
-   width: 100%;
-   min-width: 0;
-   margin: 0px 24px;
-   max-width: 680px;
-} */
-
-.break-word-styles {
-  word-break: break-word;
 }
 
 .blog-margin {
