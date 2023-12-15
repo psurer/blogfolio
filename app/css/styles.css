@@ -1,0 +1,143 @@
+/* Defining color palette */
+:root {
+  --primary-color:#4837bab1; /* Apple blue */
+  --secondary-color: #fff; /* White */
+  --text-color: #333; /* Dark gray */
+  --bg-color: #f5f5f5; /* Light gray */
+}
+
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  Global styles for links and lists */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Font styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* header styles */
+header { 
+  background-color: #4837bab1;
+  color: #3e4144;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #272828;
+  text-decoration: none;
+  font-weight:lighter;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+}
+
+header nav a.active {
+  border-bottom-color: #fff;
+  padding-bottom: 3px;
+}
+/* Styles for the header
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0 20px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+header nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 3px;
+  border-bottom-color: #fff;
+} */
+
+/* Styles for the main content */
+main {
+  max-width: 900px;
+  margin: 20px auto; 
+  padding: 0 20px;
+}
+
+/* Styles for links on hover */
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Styles for buttons */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* Styles for the footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 14px;
+}

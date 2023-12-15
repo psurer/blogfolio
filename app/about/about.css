@@ -1,0 +1,45 @@
+/* about.css */
+  .card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+  }
+  
+  .card h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+  }
+  
+  .card ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card li {
+    margin: 0 10px;
+  }
+  
+  .card a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,222 @@
+.clearfix:before,.clearfix:after {
+  content: "";
+  display: table
+}
+
+.clearfix:after {
+  clear: both
+}
+
+html {
+  overflow-y: scroll
+}
+
+/* Sets default font family, size, and color */
+body {
+  /* display: block; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #fffefb;
+  color: #333333;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+@media only screen and (min-width: 801px) and (max-width:1100px) {
+  #main-container {
+      max-width:600px
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #main-container {
+      max-width:700px
+  }
+}
+
+.home {
+  
+}
+
+/* Applying a maximum width to the page content */
+.main-container {
+  /* border: 1px solid rgb(234, 62, 10); */
+  max-width: 1000px;
+  margin: 0 auto 80px auto; 
+  padding: 0 2%;
+  width: 92%;
+}
+
+.left-container {
+  display: block;
+  border-right: 1px solid rgba(188, 188, 188, 0.144);
+  float: left;
+  width: 60%;
+
+}
+
+.right-container {
+    float: right;
+    overflow-x: hidden;
+    width: 35%;
+    box-sizing: border-box;
+}
+ 
+@media only screen and (max-width: 800px) {
+  .left-container,.right-container {
+      float:none;
+      width: 100%
+  }
+}
+
+  /* header styles */
+  header { 
+    /* display: flex; */
+    margin-top: 0;
+    display: block;
+    position:relative;
+    background-color: #4837bab1;
+    color: #3e4144;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    margin-left: 20px;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #272828;
+    text-decoration: none;
+    font-weight:lighter;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+  } */
+
+  header nav a.active {
+    border-bottom-color: #fff;
+    padding-bottom: 3px;
+  }
+
+  
+  main a {
+    color: #333;
+  }
+
+.my-avatar {
+    margin: 20px auto;
+    max-width: 100%;
+    float: right;
+    border-radius: 50%; 
+    overflow: hidden; /* hides any overflow outside the circle */
+}
+
+.my-avatar img {
+  margin: 0 0 15px 15px;
+  width: 100%; /* ensures the image takes up the entire circle*/
+  height: auto; /* maintains the aspect ratio */
+}
+
+ul.listing {
+  margin: 20px 0 30px 0;
+  padding: 0
+}
+
+
+ul.listing > li {
+  list-style: none;
+  margin: 20px 0
+}
+
+ul.listing > li > a:link,ul.listing > li > a:visited {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none
+}
+
+ul.listing > li > a:hover,ul.listing > li > a:focus,ul.listing > li > a:active {
+  text-decoration: underline
+}
+
+ul.listing span,ul.listing time {
+  display: block;
+  color: #666
+}
+
+ul.listing time a:link,ul.listing time a:visited {
+  color: #666;
+  text-decoration: underline
+}
+
+ul.listing time a:hover,ul.listing time a:focus,ul.listing time a:active {
+  color: #e22c29
+}
+
+.blog-margin {
+  display: block;
+  margin-top: 12px;
+}
+
+.blog-flex {
+  display: flex;
+}
+
+.blog-flex-display {
+  display: block;
+  flex: 1 1 auto;
+  word-break: break-word;
+}
+
+.blog-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.blog-h2 {
+  display: block;
+  padding-bottom: 8px;
+  max-height: 72px;
+  font-weight: 700;
+  
+}
+
+.blog-p {
+  max-height: 72px;
+}
+
+.line-spacer { 
+  background-color: rgb(230, 230, 230);
+  height: 1px;
+  border: 0;
+  margin: 0;
+}
+  /* footer styles */
+  footer {
+    background-color: #ffffffb1;
+    color: #323232;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  article {
+    display: block;
+  }
